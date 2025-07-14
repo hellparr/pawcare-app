@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Usuarios - PawCare</title>
+    <link rel="stylesheet" th:href="@{/styles/listUsers.css}" />
+</head>
+<body>
+<h2>Lista de Usuarios - PawCare</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Teléfono</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.email}"></td>
+        <td th:text="${user.phone}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<a th:href="@{/user/nuevo}">➕ Agregar nuevo usuario</a>
+</body>
+</html>

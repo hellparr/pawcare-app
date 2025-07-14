@@ -8,9 +8,6 @@ public class VeterinarianServiceImpl implements IVeterinarian{
 
     private IVeterinarianRepository veterinarianRepository;
 
-    public VeterinarianServiceImpl() {
-    }
-
     public VeterinarianServiceImpl(IVeterinarianRepository veterinarianRepository){
         this.veterinarianRepository = veterinarianRepository;
     }

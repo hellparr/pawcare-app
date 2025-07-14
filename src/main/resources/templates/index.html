@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lista de Usuarios</title>
 </head>
 <body>
+<h2>Home</h2>
+
+
+<a th:href="@{/user/nuevo}">Agregar nuevo usuario</a>
+<a th:href="@{/user/list}">Listar Usuarios</a>
 
 </body>
 </html>
