@@ -3,8 +3,6 @@ package co.pawcare.controller;
 import co.pawcare.entity.User;
 import co.pawcare.service.IUserService;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +20,7 @@ public class UserController {
 
     @GetMapping("/nuevo")
     public String showRegisterForm(Model model) {
+       //Se agrega el atributo user y se retorna la vista
         model.addAttribute("user", new User());
         return "registerUser";
     }
