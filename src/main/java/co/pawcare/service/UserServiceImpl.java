@@ -1,5 +1,6 @@
 package co.pawcare.service;
 
+import co.pawcare.entity.User;
 import co.pawcare.repository.IUserRepository;
 import org.springframework.stereotype.Service;
 
@@ -13,5 +14,10 @@ public class UserServiceImpl implements IUserService{
 
     public UserServiceImpl(IUserRepository userRepository){
         this.userRepository = userRepository;
+    }
+
+    @Override
+    public void save(User user){
+        userRepository.save(user);
     }
 }
