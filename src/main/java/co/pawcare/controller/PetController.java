@@ -12,17 +12,4 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/pet")
 public class PetController {
 
-
-    @GetMapping("/{username}")
-    public ResponseEntity<String> helloWorld(@PathVariable String username){
-        return new ResponseEntity<>("Hola Mi primera API: " + username, HttpStatus.OK);
-    }
-
-    @GetMapping("/listar")
-    public ResponseEntity<String> listarMascotas(@RequestParam String username) {
-        if (username.equals("hellen")){
-            return new ResponseEntity<>("Haru, Maven, Lambda", HttpStatus.OK);
-        }
-        return new ResponseEntity<>("", HttpStatus.FORBIDDEN);
-    }
 }
