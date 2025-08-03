@@ -1,7 +1,7 @@
-package co.pawcare.controller;
+package co.pawcare.app.controller;
 
-import co.pawcare.entity.User;
-import co.pawcare.service.IUserService;
+import co.pawcare.app.entity.User;
+import co.pawcare.app.service.IUserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

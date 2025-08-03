@@ -1,6 +1,6 @@
-package co.pawcare.service;
+package co.pawcare.app.service;
 
-import co.pawcare.repository.IVeterinarianRepository;
+import co.pawcare.app.repository.IVeterinarianRepository;
 import org.springframework.stereotype.Service;
 
 @Service

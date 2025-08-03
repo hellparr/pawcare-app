@@ -1,6 +1,6 @@
-package co.pawcare.service;
+package co.pawcare.app.service;
 
-import co.pawcare.entity.User;
+import co.pawcare.app.entity.User;
 
 import java.util.List;
 

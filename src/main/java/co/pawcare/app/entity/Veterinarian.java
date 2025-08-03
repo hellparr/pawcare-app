@@ -1,4 +1,4 @@
-package co.pawcare.entity;
+package co.pawcare.app.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

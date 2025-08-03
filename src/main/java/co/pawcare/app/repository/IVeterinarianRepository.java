@@ -1,6 +1,6 @@
-package co.pawcare.repository;
+package co.pawcare.app.repository;
 
-import co.pawcare.entity.Veterinarian;
+import co.pawcare.app.entity.Veterinarian;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

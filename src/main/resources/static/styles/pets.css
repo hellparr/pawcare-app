@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #C8FACC, #A8F0A3);
+    color: #2F4F4F;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Contenedor central del formulario */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(110, 193, 100, 0.2);
+    width: 100%;
+    max-width: 460px;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #6BAA4B;
+    font-size: 26px;
+}
+
+/* Agrupación de los inputs */
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Etiquetas y campos */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #355C65;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+    padding: 10px 14px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f8fef8;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #72E072;
+    box-shadow: 0 0 0 3px rgba(168, 240, 163, 0.4);
+}
+
+/* Botón principal */
+button {
+    background-color: #6BAA4B;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5a9740;
+}
+
+input[type="date"] {
+  padding: 10px 15px;
+  border: 1px solid #87bde4; /* azul pastel */
+  border-radius: 8px;
+  background-color: #f5fafd; /* fondo blanco azulado */
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: #333;
+
+  /* para quitar el ícono de calendario en algunos navegadores */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="date"]:hover {
+  border-color: #5ca8dc;
+}
+
+input[type="date"]:focus {
+  border-color: #2e8bc0;
+  box-shadow: 0 0 5px rgba(46, 139, 192, 0.4);
+}

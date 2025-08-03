@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta charset="UTF-8">
     <title>Lista de Usuarios</title>
+    <link rel="stylesheet" th:href="@{/styles/styles.css}" />
 </head>
 <body>
 <h2>Home</h2>
 
-
-<a th:href="@{/user/nuevo}">Agregar nuevo usuario</a>
-<a th:href="@{/user/list}">Listar Usuarios</a>
+<div class="menu">
+    <a th:href="@{/user/nuevo}">Agregar nuevo usuario</a>
+    <a th:href="@{/user/list}">Listar Usuarios</a>
+    <a th:href="@{/veterinarian/register}">Registro Veterinario</a>
+    <a th:href="@{/pet/register}">Registro Mascota</a>
+    <a th:href="@{/pet/list}">Listar Mascotas</a>
+</div>
 
 </body>
 </html>

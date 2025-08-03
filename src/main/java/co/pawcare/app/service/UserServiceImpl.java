@@ -1,7 +1,7 @@
-package co.pawcare.service;
+package co.pawcare.app.service;
 
-import co.pawcare.entity.User;
-import co.pawcare.repository.IUserRepository;
+import co.pawcare.app.entity.User;
+import co.pawcare.app.repository.IUserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

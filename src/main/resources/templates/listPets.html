@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Lista de Mascotas - PawCare</title>
+  <link rel="stylesheet" th:href="@{/styles/listPets.css}" />
+</head>
+<body>
+<h2>Lista de Mascotas - PawCare</h2>
+
+<table>
+  <thead>
+  <tr>
+    <th>Nombre</th>
+    <th>Raza</th>
+    <th>Fecha</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="pet : ${pets}">
+    <td th:text="${pet.name}"></td>
+    <td th:text="${pet.race}"></td>
+    <td th:text="${pet.date}"></td>
+  </tr>
+  </tbody>
+</table>
+
+<a th:href="@{/pet/register}">➕ Agregar nueva mascota</a>
+</body>
+</html>
