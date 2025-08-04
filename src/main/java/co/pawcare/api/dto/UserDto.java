@@ -1,28 +1,18 @@
-package co.pawcare.app.entity;
+package co.pawcare.api.dto;
 
-import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
-@Entity
 @Getter
 @Setter
-public class User {
-
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+public class UserDto {
     private String name;
+    @JsonProperty("last_name")
     private String lastName;
     private String email;
     private String phone;
     private String site;
     private String password;
     private String role;
-
-    @OneToMany
-    private List<Pet> pets;
-
 }

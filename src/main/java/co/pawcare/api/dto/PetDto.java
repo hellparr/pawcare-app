@@ -1,8 +1,10 @@
 package co.pawcare.api.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.time.LocalDate;
 
-
+@JsonInclude(JsonInclude.Include.NON_DEFAULT)
 public class PetDto {
     private Long id;
     private String name;
