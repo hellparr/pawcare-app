@@ -1,6 +1,7 @@
 package co.pawcare.app.service;
 
 import co.pawcare.api.dto.UserDto;
+import co.pawcare.api.exception.BadRequestException;
 import co.pawcare.api.mappers.UserMapper;
 import co.pawcare.app.entity.User;
 import co.pawcare.app.repository.IUserRepository;
@@ -46,7 +47,7 @@ public class UserServiceImpl implements IUserService{
     public void register(UserDto userDto) {
         // Lanza error, debido a que ya hay usuario con el email.
         if (userExistsByEmail(userDto.getEmail())){
-            throw new RuntimeException("User already exists with this email");
+            throw new BadRequestException("User already exists with this email");
         }
 
         User userSave = UserMapper.userDtoToUser(userDto);
